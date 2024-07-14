@@ -6,15 +6,15 @@ namespace SalesWebMvc.Models
 {
     public class Department
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
         public Department () {}
 
-        public Department(int iD, string name)
+        public Department(int id, string name)
         {
-            ID = iD;
+            Id = id;
             Name = name;
         }
 
